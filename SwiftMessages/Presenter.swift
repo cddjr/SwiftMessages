@@ -193,6 +193,10 @@ class Presenter: NSObject {
     }
 
     func hide(animated: Bool, completion: @escaping AnimationCompletion) {
+        guard !isHiding else {
+            //180322: 避免在延时异步调用期间重复hide  by cddjr
+            return
+        }
         isHiding = true
         self.config.eventListeners.forEach { $0(.willHide) }
         let context = animationContext()

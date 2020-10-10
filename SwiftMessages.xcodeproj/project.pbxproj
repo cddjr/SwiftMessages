@@ -58,6 +58,7 @@
 		22E01F641E74EC8B00ACE19A /* MaskingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E01F631E74EC8B00ACE19A /* MaskingView.swift */; };
 		22E307FF1E74C5B100E35893 /* AccessibleMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E307FE1E74C5B100E35893 /* AccessibleMessage.swift */; };
 		22F27951210CE25900273E7F /* CornerRoundingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F27950210CE25900273E7F /* CornerRoundingView.swift */; };
+		65AC47E9253163B700AEC29E /* LeftRightAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AC47E7253163B700AEC29E /* LeftRightAnimation.swift */; };
 		86589D471D64B6E40041676C /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86589D461D64B6E40041676C /* BaseView.swift */; };
 		86589D911D692B1C0041676C /* TabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86589D901D692B1B0041676C /* TabView.xib */; };
 		867BED211D622793005212E3 /* BackgroundViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867BED201D622793005212E3 /* BackgroundViewable.swift */; };
@@ -144,6 +145,7 @@
 		22E01F631E74EC8B00ACE19A /* MaskingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaskingView.swift; sourceTree = "<group>"; };
 		22E307FE1E74C5B100E35893 /* AccessibleMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessibleMessage.swift; sourceTree = "<group>"; };
 		22F27950210CE25900273E7F /* CornerRoundingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRoundingView.swift; sourceTree = "<group>"; };
+		65AC47E7253163B700AEC29E /* LeftRightAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftRightAnimation.swift; sourceTree = "<group>"; };
 		862C0C6A1D58E93300D06168 /* SwiftMessages.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = SwiftMessages.podspec; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		862C0CB01D5911C100D06168 /* NSBundle+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSBundle+Utils.swift"; sourceTree = "<group>"; };
 		862C0CDA1D5A397F00D06168 /* MessageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MessageView.xib; path = Resources/MessageView.xib; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 		2244656C1EF1D62700C50413 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				65AC47E7253163B700AEC29E /* LeftRightAnimation.swift */,
 				2298C2081EE486E300E2DDC1 /* TopBottomAnimation.swift */,
 				2270044A1FAFA6DD0045DDC3 /* PhysicsAnimation.swift */,
 				22DFC9171F00674E001B1CA1 /* PhysicsPanHandler.swift */,
@@ -526,6 +529,7 @@
 				86BBA9041D5E040600FE8F16 /* NSBundle+Utils.swift in Sources */,
 				86BBA8FD1D5E03F800FE8F16 /* SwiftMessages.swift in Sources */,
 				86BBA9021D5E040600FE8F16 /* WindowViewController.swift in Sources */,
+				65AC47E9253163B700AEC29E /* LeftRightAnimation.swift in Sources */,
 				86BBA8FF1D5E040600FE8F16 /* Presenter.swift in Sources */,
 				86BBA9051D5E040C00FE8F16 /* Theme.swift in Sources */,
 				86BBA9081D5E040C00FE8F16 /* Error.swift in Sources */,

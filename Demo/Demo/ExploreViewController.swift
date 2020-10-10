@@ -91,6 +91,10 @@ class ExploreViewController: UITableViewController, UITextFieldDelegate {
             config.presentationStyle = .bottom
         case 2:
             config.presentationStyle = .center
+        case 3:
+            config.presentationStyle = .custom(animator: LeftRightAnimation(style: .left))
+        case 4:
+            config.presentationStyle = .custom(animator: LeftRightAnimation(style: .right))
         default:
             break
         }

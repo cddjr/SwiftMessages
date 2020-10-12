@@ -85,7 +85,6 @@ open class KeyboardTrackingView: UIView {
         guard !(isPaused || isAutomaticallyPaused),
             let userInfo = (notification as NSNotification).userInfo else { return }
         guard heightConstraint.constant != 0 else { return }
-        delegate?.keyboardTrackingViewWillChange(change: .hide, userInfo: userInfo)
         animateKeyboardChange(change: .hide, height: 0, userInfo: userInfo)
     }
 
@@ -105,7 +104,10 @@ open class KeyboardTrackingView: UIView {
         let thisRect = convert(bounds, to: nil)
         let newHeight = max(0, thisRect.maxY - keyboardRect.minY) + topMargin
         guard heightConstraint.constant != newHeight else { return }
-        delegate?.keyboardTrackingViewWillChange(change: change, userInfo: userInfo)
+        var change = change
+        if newHeight == 0 {
+            change = .hide
+        }
         animateKeyboardChange(change: change, height: newHeight, userInfo: userInfo)
     }
 
@@ -121,9 +123,13 @@ open class KeyboardTrackingView: UIView {
             UIView.setAnimationDuration(durationNumber.doubleValue)
             UIView.setAnimationCurve(UIView.AnimationCurve(rawValue: curveNumber.intValue)!)
             UIView.setAnimationBeginsFromCurrentState(true)
+            self.delegate?.keyboardTrackingViewWillChange(change: change, userInfo: userInfo)
             self.superview?.layoutIfNeeded()
             UIView.commitAnimations()
             CATransaction.commit()
+        } else {
+            self.delegate?.keyboardTrackingViewWillChange(change: change, userInfo: userInfo)
+            self.delegate?.keyboardTrackingViewDidChange(change: change, userInfo: userInfo)
         }
     }
 }

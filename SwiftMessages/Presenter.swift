@@ -123,6 +123,10 @@ class Presenter: NSObject {
             return TopBottomAnimation(style: .bottom, delegate: delegate)
         case .center:
             return PhysicsAnimation(delegate: delegate)
+        case .left:
+            return LeftRightAnimation(style: .left, delegate: delegate)
+        case .right:
+            return LeftRightAnimation(style: .right, delegate: delegate)
         case .custom(let animator):
             animator.delegate = delegate
             return animator

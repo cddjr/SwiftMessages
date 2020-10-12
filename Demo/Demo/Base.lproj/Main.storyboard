@@ -817,7 +817,7 @@
                                 <rect key="frame" x="46" y="84" width="283" height="494"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DrN-Ei-Pg7">
-                                        <rect key="frame" x="0.0" y="0.0" width="283" height="62"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="283" height="36"/>
                                         <color key="backgroundColor" red="0.16470588235294117" green="0.6588235294117647" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                         <state key="normal" title="Top Message"/>
@@ -831,7 +831,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GeC-SP-rSC">
-                                        <rect key="frame" x="0.0" y="72" width="283" height="62"/>
+                                        <rect key="frame" x="0.0" y="46" width="283" height="35.5"/>
                                         <color key="backgroundColor" red="0.1647058824" green="0.6588235294" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                         <state key="normal" title="Bottom Message"/>
@@ -845,7 +845,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DGn-eY-EEX">
-                                        <rect key="frame" x="0.0" y="144" width="283" height="62"/>
+                                        <rect key="frame" x="0.0" y="91.5" width="283" height="36"/>
                                         <color key="backgroundColor" red="0.26627604170000002" green="0.76907009550000005" blue="0.32259114579999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                         <state key="normal" title="Top Card"/>
@@ -859,7 +859,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQs-MK-vK3">
-                                        <rect key="frame" x="0.0" y="216" width="283" height="62"/>
+                                        <rect key="frame" x="0.0" y="137.5" width="283" height="36"/>
                                         <color key="backgroundColor" red="0.26627604170000002" green="0.76907009550000005" blue="0.32259114579999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                         <state key="normal" title="Bottom Card"/>
@@ -873,7 +873,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kux-aE-Bdv" userLabel="Top Tab">
-                                        <rect key="frame" x="0.0" y="288" width="283" height="62"/>
+                                        <rect key="frame" x="0.0" y="183.5" width="283" height="35.5"/>
                                         <color key="backgroundColor" red="0.80000000000000004" green="0.015686274510000067" blue="0.62082127703967116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                         <state key="normal" title="Top Tab"/>
@@ -887,7 +887,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMQ-xF-RwV" userLabel="Bottom Tab">
-                                        <rect key="frame" x="0.0" y="360" width="283" height="62"/>
+                                        <rect key="frame" x="0.0" y="229" width="283" height="36"/>
                                         <color key="backgroundColor" red="0.80000000000000004" green="0.015686274510000001" blue="0.620821277" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                         <state key="normal" title="Bottom Tab"/>
@@ -901,7 +901,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDi-Gu-bE2" userLabel="Centered">
-                                        <rect key="frame" x="0.0" y="432" width="283" height="62"/>
+                                        <rect key="frame" x="0.0" y="275" width="283" height="35.5"/>
                                         <color key="backgroundColor" red="1" green="0.46653546191345963" blue="0.015686274510000042" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                         <state key="normal" title="Centered"/>
@@ -912,6 +912,62 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <segue destination="dHK-y5-h16" kind="custom" customClass="SwiftMessagesCenteredSegue" customModule="Demo" customModuleProvider="target" id="had-cE-9YN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7p6-1J-MLC">
+                                        <rect key="frame" x="0.0" y="320.5" width="283" height="36"/>
+                                        <color key="backgroundColor" red="0.1647058824" green="0.6588235294" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <state key="normal" title="Left Message"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="414-zC-dku" kind="custom" customClass="SwiftMessagesLeftSegue" customModule="Demo" customModuleProvider="target" id="oCa-6D-pqW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gOf-Wc-cOS">
+                                        <rect key="frame" x="0.0" y="366.5" width="283" height="36"/>
+                                        <color key="backgroundColor" red="0.1647058824" green="0.6588235294" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <state key="normal" title="Right Message"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="414-zC-dku" kind="custom" customClass="SwiftMessagesRightSegue" customModule="Demo" customModuleProvider="target" id="EIy-T5-FJF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Azh-Cq-QiK">
+                                        <rect key="frame" x="0.0" y="412.5" width="283" height="35.5"/>
+                                        <color key="backgroundColor" red="0.26627604170000002" green="0.76907009550000005" blue="0.32259114579999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <state key="normal" title="Left Card"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="414-zC-dku" kind="custom" customClass="SwiftMessagesLeftCardSegue" customModule="Demo" customModuleProvider="target" id="Fj8-tR-cOc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bfg-Z0-1EN">
+                                        <rect key="frame" x="0.0" y="458" width="283" height="36"/>
+                                        <color key="backgroundColor" red="0.26627604170000002" green="0.76907009550000005" blue="0.32259114579999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <state key="normal" title="Right Card"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="414-zC-dku" kind="custom" customClass="SwiftMessagesRightCardSegue" customModule="Demo" customModuleProvider="target" id="9zq-aL-hvt"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -946,7 +1002,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ynl-rR-xVc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3164" y="689"/>
+            <point key="canvasLocation" x="3196" y="400"/>
         </scene>
         <!--Parent-->
         <scene sceneID="k3I-tw-Opi">
@@ -1065,6 +1121,7 @@
                             <constraint firstItem="2bv-DK-h4b" firstAttribute="centerY" secondItem="0Cn-7n-ODp" secondAttribute="centerYWithinMargins" id="93w-dz-NPV"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="bKt-v4-xML"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mU1-MA-hwk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1087,10 +1144,30 @@
             </objects>
             <point key="canvasLocation" x="473" y="305"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="Q2M-LT-WV2">
+            <objects>
+                <navigationController id="414-zC-dku" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="CWV-uJ-VOK"/>
+                    <value key="contentSizeForViewInPopover" type="size" width="250" height="0.0"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zDg-aJ-HVK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="CCQ-og-YsG" kind="relationship" relationship="rootViewController" id="HBO-Si-us3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6FJ-bn-h29" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3196" y="1084"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="EIy-T5-FJF"/>
         <segue reference="h5n-Vv-Q3y"/>
-        <segue reference="EaG-Ea-U3j"/>
+        <segue reference="HBO-Si-us3"/>
+        <segue reference="6Yg-dE-eXA"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="iconSwiftMessages" width="38" height="31"/>

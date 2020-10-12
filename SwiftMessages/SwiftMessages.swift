@@ -37,6 +37,9 @@ open class SwiftMessages {
          Message view fades into the center.
          */
         case center
+        
+        case left
+        case right
 
         /**
          User-defined animation

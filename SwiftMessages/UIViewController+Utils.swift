@@ -95,7 +95,7 @@ extension SwiftMessages.PresentationStyle {
         case .top: return .top
         case .bottom: return .bottom
         case .custom(let animator): return (animator as? TopBottomAnimation)?.style
-        case .center: return nil
+        case .center, .left, .right: return nil
         }
     }
 }

@@ -84,6 +84,12 @@ open class SwiftMessagesSegue: UIStoryboardSegue {
 
         /// A floating card-style view typically used with `.center` presentation style.
         case centered
+        
+        case leftMessage
+        case rightMessage
+        
+        case leftCard
+        case rightCard
     }
 
     /**
@@ -271,6 +277,30 @@ extension SwiftMessagesSegue {
             messageView.collapseLayoutMarginAdditions = true
             containerView.cornerRadius = 15
             presentationStyle = .center
+        case .leftMessage:
+            messageView.layoutMarginAdditions = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
+            messageView.collapseLayoutMarginAdditions = false
+            let animation = LeftRightAnimation(style: .left)
+            animation.springDamping = 1
+            presentationStyle = .custom(animator: animation)
+        case .rightMessage:
+            messageView.layoutMarginAdditions = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
+            messageView.collapseLayoutMarginAdditions = false
+            let animation = LeftRightAnimation(style: .right)
+            animation.springDamping = 1
+            presentationStyle = .custom(animator: animation)
+        case .leftCard:
+            containment = .background
+            messageView.layoutMarginAdditions = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+            messageView.collapseLayoutMarginAdditions = true
+            containerView.cornerRadius = 15
+            presentationStyle = .left
+        case .rightCard:
+            containment = .background
+            messageView.layoutMarginAdditions = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+            messageView.collapseLayoutMarginAdditions = true
+            containerView.cornerRadius = 15
+            presentationStyle = .right
         }
     }
 }

@@ -63,3 +63,31 @@ class SwiftMessagesCenteredSegue: SwiftMessagesSegue {
         configure(layout: .centered)
     }
 }
+
+class SwiftMessagesLeftSegue: SwiftMessagesSegue {
+    override public  init(identifier: String?, source: UIViewController, destination: UIViewController) {
+        super.init(identifier: identifier, source: source, destination: destination)
+        configure(layout: .leftMessage)
+    }
+}
+
+class SwiftMessagesLeftCardSegue: SwiftMessagesSegue {
+    override public  init(identifier: String?, source: UIViewController, destination: UIViewController) {
+        super.init(identifier: identifier, source: source, destination: destination)
+        configure(layout: .leftCard)
+    }
+}
+
+class SwiftMessagesRightSegue: SwiftMessagesSegue {
+    override public  init(identifier: String?, source: UIViewController, destination: UIViewController) {
+        super.init(identifier: identifier, source: source, destination: destination)
+        configure(layout: .rightMessage)
+    }
+}
+
+class SwiftMessagesRightCardSegue: SwiftMessagesSegue {
+    override public  init(identifier: String?, source: UIViewController, destination: UIViewController) {
+        super.init(identifier: identifier, source: source, destination: destination)
+        configure(layout: .rightCard)
+    }
+}

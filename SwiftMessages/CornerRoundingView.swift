@@ -10,6 +10,7 @@ import UIKit
 
 /// A background view that messages can use for rounding all or a subset of corners with squircles
 /// (the smoother method of rounding corners that you see on app icons).
+@IBDesignable
 open class CornerRoundingView: UIView {
 
     /// Specifies the corner radius to use.
@@ -27,6 +28,67 @@ open class CornerRoundingView: UIView {
     /// by relevant animators (e.g. `TopBottomAnimation`).
     @IBInspectable
     open var roundsLeadingCorners: Bool = false
+    
+    @IBInspectable
+    open var roundedTopLeft: Bool {
+        get {
+            roundedCorners.contains(.topLeft) || roundedCorners.contains(.allCorners)
+        }
+        set {
+            guard newValue != roundedTopLeft else { return }
+            updateRoundedCorners(newValue, roundedTopRight, roundedBottomLeft, roundedBottomRight)
+        }
+    }
+    
+    @IBInspectable
+    open var roundedTopRight: Bool {
+        get {
+            roundedCorners.contains(.topRight) || roundedCorners.contains(.allCorners)
+        }
+        set {
+            guard newValue != roundedTopRight else { return }
+            updateRoundedCorners(roundedTopLeft, newValue, roundedBottomLeft, roundedBottomRight)
+        }
+    }
+    
+    @IBInspectable
+    open var roundedBottomLeft: Bool {
+        get {
+            roundedCorners.contains(.bottomLeft) || roundedCorners.contains(.allCorners)
+        }
+        set {
+            guard newValue != roundedBottomLeft else { return }
+            updateRoundedCorners(roundedTopLeft, roundedTopRight, newValue, roundedBottomRight)
+        }
+    }
+    
+    @IBInspectable
+    open var roundedBottomRight: Bool {
+        get {
+            roundedCorners.contains(.bottomRight) || roundedCorners.contains(.allCorners)
+        }
+        set {
+            guard newValue != roundedBottomRight else { return }
+            updateRoundedCorners(roundedTopLeft, roundedTopRight, roundedBottomLeft, newValue)
+        }
+    }
+    
+    private func updateRoundedCorners(_ topLeft: Bool, _ topRight: Bool, _ bottomLeft: Bool, _ bottomRight: Bool) {
+        var roundedCorners: UIRectCorner = []
+        if topLeft {
+            roundedCorners.insert(.topLeft)
+        }
+        if topRight {
+            roundedCorners.insert(.topRight)
+        }
+        if bottomLeft {
+            roundedCorners.insert(.bottomLeft)
+        }
+        if bottomRight {
+            roundedCorners.insert(.bottomRight)
+        }
+        self.roundedCorners = roundedCorners
+    }
 
     /// Specifies which corners should be rounded. When `roundsLeadingCorners = true`, relevant
     /// relevant animators (e.g. `TopBottomAnimation`) will overwrite the value of this property.
